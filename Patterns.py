@@ -101,3 +101,22 @@ OP:
  ####
 #####
 '''
+
+def number_left_triangle(n):
+  for i in range(n+1):
+    for j in range(1,n-i+1):
+      print(j,end="")
+    print()
+number_left_triangle(5)
+
+'''
+OP:
+12345
+1234
+123
+12
+1
+'''
+
+
+
