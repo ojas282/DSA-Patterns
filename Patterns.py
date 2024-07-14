@@ -4,7 +4,7 @@ def box(n):
       print("#",end="")
     print()
 
-box(5)
+# box(5)
 
 '''
 OP: 
@@ -21,7 +21,7 @@ def right_90(n):
       print("# ",end="")
     print()
 
-right_90(5)
+# right_90(5)
 
 '''
 OP:
@@ -39,7 +39,7 @@ def right_90_num(n):
       print(j,end='')
     print()
   
-right_90_num(5)
+# right_90_num(5)
 
 '''OP:
 1
@@ -54,7 +54,7 @@ def right_90_same(n):
       print(i,end="")
     print()
 
-right_90_same(5)
+# right_90_same(5)
 
 '''
 OP:
@@ -72,7 +72,7 @@ def upper_lefthalf_triangle(n):
     print()
 
 
-upper_lefthalf_triangle(5)
+# upper_lefthalf_triangle(5)
 
 '''
 OP:
@@ -92,7 +92,7 @@ def left_90(n):
     for k in range(i):
       print("#",end="")
     print()
-left_90(5)
+# left_90(5)
 '''
 OP:
     #
@@ -107,7 +107,7 @@ def number_left_triangle(n):
     for j in range(1,n-i+1):
       print(j,end="")
     print()
-number_left_triangle(5)
+# number_left_triangle(5)
 
 '''
 OP:
@@ -129,9 +129,36 @@ def pyramids(n):
     for l in range(n-i-1):
       print(" ",end="")
     print()
-pyramids(5)
 
-  
+# pyramids(5)
+
+#OR
+def pyramids2(n):
+  for i in range(0,n):
+    print(" "*(n-i-1)+"#"*(2*i+1)+" "*(n-i-1))
+
+# pyramids2(5)
 
 
+'''
+OP:
+    #    
+   ###   
+  #####  
+ ####### 
+#########
+'''
+def upsiDown_pyramid(n):
+  for i in range(0,n):
+    print(" "* i + "#" * (2*(n-i)-1) + " "* i)
 
+# upsiDown_pyramid(5)
+
+'''
+OP:
+#########
+ ####### 
+  #####  
+   ###   
+    #  
+'''
