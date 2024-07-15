@@ -162,3 +162,45 @@ OP:
    ###   
     #  
 '''
+def upsiDown_pyramid_double(n):
+  for i in range(0,n):
+    print(" "* (n-i-1) + "#" * (2*i+1) + " "* (n-i-1))
+  for i in range(0,n):
+    print(" "* i + "#" * (2*(n-i)-1) + " "* i)
+
+# upsiDown_pyramid_double(5)
+
+'''
+OP:
+    #    
+   ###   
+  #####  
+ ####### 
+#########
+#########
+ ####### 
+  #####  
+   ###   
+    #    
+'''
+def print_left(n):
+  for i in range(n):
+    for j in range(i+1):
+      print("# ",end="")
+    print()
+  for i in range(n):
+    for j in range(n-i-1):
+      print("# ",end="")
+    print()
+  
+  
+    
+# print_left(10)
+arr1=[1,2,3,4,5,6,7,8,9,10]
+arr2=[2,3,4,4,5,11,12]
+new = arr1+arr2
+final = set(new)
+print(arr1)
+print(arr2)
+print()
+print(list(final))
